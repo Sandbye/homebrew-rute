@@ -5,21 +5,21 @@
 class Rute < Formula
   desc "Browse and export your API routes and Zod schemas from the terminal"
   homepage "https://github.com/Sandbye/rute"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Sandbye/rute/releases/download/v0.1.1/rute_darwin_amd64.tar.gz"
-      sha256 "f194edd073fd79fc6853ebf20e27738775433bf236b265decf76595fa5d18bc6"
+      url "https://github.com/Sandbye/rute/releases/download/v0.1.2/rute_darwin_amd64.tar.gz"
+      sha256 "4745a1362c828a5f7ad2236bacb1d62ff2bdfdaefd2569d520bac6f2425e0cdd"
 
       define_method(:install) do
         bin.install "rute"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Sandbye/rute/releases/download/v0.1.1/rute_darwin_arm64.tar.gz"
-      sha256 "0436f422e3ffe088c73fc444fea19ae89aac16d9169956ed08e763f969e28847"
+      url "https://github.com/Sandbye/rute/releases/download/v0.1.2/rute_darwin_arm64.tar.gz"
+      sha256 "bee1c333288038e25d69fd953c8d5faa703c5d72d308c3e1ea2c0854af7cfdd5"
 
       define_method(:install) do
         bin.install "rute"
@@ -29,15 +29,15 @@ class Rute < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sandbye/rute/releases/download/v0.1.1/rute_linux_amd64.tar.gz"
-      sha256 "c277fd05cc8772b6e6c916552eb9594020b93cea70968db72d69d658d9611a21"
+      url "https://github.com/Sandbye/rute/releases/download/v0.1.2/rute_linux_amd64.tar.gz"
+      sha256 "cd6e5179a9ade349570b73174d7be2bcec25b4068577c8582653649e082fa106"
       define_method(:install) do
         bin.install "rute"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sandbye/rute/releases/download/v0.1.1/rute_linux_arm64.tar.gz"
-      sha256 "9a19a77be3da5a32243026e5f3ecc6c59d54dee9b435f3afa22e1f51b189713e"
+      url "https://github.com/Sandbye/rute/releases/download/v0.1.2/rute_linux_arm64.tar.gz"
+      sha256 "0509f49fdaace2b8f6acb213229832de06011dab721dc53740682a9c5a0f04d6"
       define_method(:install) do
         bin.install "rute"
       end
